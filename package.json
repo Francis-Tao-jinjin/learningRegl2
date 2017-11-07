@@ -1,0 +1,26 @@
+{
+  "name": "regl-learning",
+  "version": "1.0.0",
+  "description": "regl-learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browserify ./js/main.js -o bundle.js -t [ babelify --presets [ es2015 ] ] && http-server . -p 8000"
+  },
+  "author": "taojinjin",
+  "license": "ISC",
+  "dependencies": {
+    "canvas-orbit-camera": "^1.0.2",
+    "parse-dds": "^1.2.1",
+    "regl": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-helper-replace-supers": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babelify": "^7.3.0",
+    "watchify": "^3.9.0"
+  }
+}
